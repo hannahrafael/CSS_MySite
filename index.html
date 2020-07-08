@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hannah Rafael</title>
+</head>
+
+<!-- Input Bootstrap Repository -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- Input Personal CSS Styles, this is applied last, so bootstrap will not override my custom settings. -->
+<link rel="stylesheet" href="CSS/styles.css">
+<!-- Favicon, the bookmark icon-->
+<link rel="icon" href="Images\favicon.ico">
+<!-- Fonts from Google-->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+
+
+
+<body>
+
+  <!-- Top Section Header -->
+  <div class="top-sect">
+    <h1> Hannah Rafael</h1>
+  </div>
+
+  <section class="TopSectionNav">
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-light navbar-expand-lg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Welcome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Hobbies">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </section>
+
+  <br>
+
+  <!-- MIDDLE CONTAINER INCLUDES INFO ABOUT ME -->
+  <div class="middle-container">
+    <div class="profile">
+      <img class="ProfilePic" src="Images\CircularHeadshot.png" alt="Profile Picture of Hannah Rafael">
+      <h2>Hi there.</h2>
+      <p class="intro"> I am a junior from Southern California studying Aerospace Engineering at the University of Notre Dame. I have a love for aircraft, aviation, and programming. </p>
+    </div>
+    <hr>
+
+    <!-- SKILLS SUBSECTION  -->
+    <div id= Skills>
+    <div class="skill">
+      <h2>A Few of My Skills:</h2>
+      <br />
+
+      <!-- Format: Image, Skill title, Italicized list of skills, elaboration paragraph -->
+      <div class="skill-row">
+        <img class="programmingIMG" src="Images\programmingICON.png" alt="Programming Icon">
+        <h3>Programming</h3>
+        <p> <em> MATLAB, Fortran, Python, Java, Processing </p> </em>
+        <p> I began teaching myself how to code when I was 16 years old because I loved the idea of being able to create anything and everything using a computer. Since then, I've been able to gain more experience by working on projects and applying my knowledge in
+          engineering design. </p>
+      </div>
+
+      <div class="skill-row">
+        <img class="webdevIMG" src="Images\webdevICON.png" alt="Web Development Icon">
+        <h3>Web Development</h3>
+        <p> <em> HTML, CSS</p> </em>
+        <p> As a STEM major, I often find opportunities to be creative little to none in my daily life. While I started learning basic HTML at a young age, I began to devote more time into learning how to create websites by enrolling myself in an
+          online course this summer. I even coded this entire site from scratch myself! </p>
+      </div>
+
+      <div class="skill-row">
+        <img class="cadIMG" src="Images\CADICON.png" alt="CAD Icon">
+        <h3>Computer Aided Design</h3>
+        <p> <em> SolidWorks, Makerbot</p> </em>
+        <p> Some of my favorite projects I've designed are a Notre Dame picture frame for the campus bookstore, a 3D printed face-shield in light of the global pandemic, and a keychain of one of my favorite animals. </p>
+      </div>
+
+    </div>
+</div>
+
+<!-- HOBBIES SECTION -->
+  <div id="Hobbies">
+    <div class="Hobbies">
+      <h2> My Favorite Activites: </h2>
+
+
+<!-- Hobby: Baking-->
+      <div class="hobby-row">
+        <h3> Baking </h3>
+        <p> Life's What You Bake It. </p>
+        <!-- Carousel of Baking Pictures with Controls-->
+        <div id="hobbiesCarousel" class="carousel slide" data-ride="false" data-interval="false">
+          <div class="bakingCarousel">
+            <div class="carousel-item active">
+              <img class="bakingIMG" src="Images\monkeybread.jpg" alt="Monkey Bread">
+              <h6> Monkey Bread </h6>
+            </div>
+            <div class="carousel-item">
+              <img class="bakingIMG" src="Images\apple pie.jpg" alt="Dutch Apple Pie">
+              <h6> Dutch Apple Pie </h6>
+            </div>
+            <div class="carousel-item">
+              <img class="bakingIMG" src="Images\cookies.jpg" alt="Chocolate Chip Cookies">
+              <h6> Chocolate Chip Cookies </h6>
+            </div>
+            <div class="carousel-item">
+              <img class="bakingIMG" src="Images\Bread.jpg" alt="Ube Bread">
+              <h6> Ube Bread </h6>
+            </div>
+            <ol class="carousel-indicators">
+               <li data-target="#bakingCourselIndicator" data-slide-to="0" class="active"></li>
+               <li data-target="#bakingCourselIndicator" data-slide-to="1"></li>
+               <li data-target="#bakingCourselIndicator" data-slide-to="2"></li>
+               <li data-target="#bakingCourselIndicator" data-slide-to="3"></li>
+           </ol>
+          </div>
+
+          <!-- Controls for the carousel -->
+          <a class="carousel-control-prev" href="#hobbiesCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#hobbiesCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+
+
+
+<!-- Hobby: Traveling-->
+      <div class="hobby-row">
+        <h3> Traveling </h3>
+        <p> All Roads Lead to Home. </p>
+        <!-- Carousel of Traveling Pictures with Controls-->
+        <div id="hobbiesCarousel2" class="carousel slide" data-ride="false" data-interval="false">
+          <div class="travelingCarousel">
+            <div class="carousel-item active">
+              <img class="travelingIMG" src="Images\LagunaBeach.jpg" alt="Southern California, Home">
+              <h6> Laguna Beach, CA</h6>
+            </div>
+            <div class="carousel-item">
+              <img class="travelingIMG" src="Images\Rome.jpg" alt="Rome">
+              <h6> Rome, Italy </h6>
+            </div>
+            <div class="carousel-item">
+              <img class="travelingIMG" src="Images\Ibiza.jpg" alt="Ibiza">
+              <h6> Ibiza, Spain </h6>
+            </div>
+            <div class="carousel-item">
+              <img class="travelingIMG" src="Images\Sorrento.jpg" alt="Sorrento">
+              <h6> Sorrento, Italy </h6>
+            </div>
+            <div class="carousel-item">
+              <img class="travelingIMG" src="Images\Notre Dame.jpg" alt="Notre Dame">
+              <h6> Notre Dame, IN </h6>
+            </div>
+            <div class="carousel-item">
+              <img class="travelingIMG" src="Images\Bridgman.jpg" alt="Bridgman">
+              <h6> Bridgman, MI </h6>
+            </div>
+            <div class="carousel-item">
+              <img class="travelingIMG" src="Images\Paris.jpg" alt="Paris">
+              <h6> Paris, France </h6>
+            </div>
+            <div class="carousel-item">
+              <img class="travelingIMG" src="Images\Atlanta.jpg" alt="Atlanta">
+              <h6> Atlanta, GA </h6>
+            </div>
+            <div class="carousel-item">
+              <img class="travelingIMG" src="Images\Berkeley.jpg" alt="Berkeley">
+              <h6> Berkeley, CA </h6>
+            </div>
+
+          </div>
+          <!-- Controls for the carousel -->
+          <a class="carousel-control-prev" href="#hobbiesCarousel2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#hobbiesCarousel2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+
+      </div>
+    </div> <!-- End of Hobbies Class-->
+  </div>  <!-- End of Hobbies ID-->
+
+    <hr>
+    <div id="Contact">
+    <div class="Contact">
+      <h2>Get In Touch</h2>
+      <h3> Do you have any questions or comments?</h3>
+      <h3>Feel free to send me a message below or connect with me on LinkedIn.</h3>
+      <p> I'll get back to you as soon as possible.</p>
+      <a class="btn" href="mailto:hannahkrafael@gmail.com"> Email </a>
+      <a class="footer-link" href="https://www.linkedin.com/in/hannah-rafael/"> | LinkedIn</a>
+  </div> <!-- End of Contact Class-->
+</div>  <!-- End of Contact ID-->
+
+
+
+
+  <div class="bottom-container">
+    <p>© 2020 Hannah Rafael.</p>
+  </div>
+</body>
+
+</html>
