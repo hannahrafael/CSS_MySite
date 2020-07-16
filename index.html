@@ -47,7 +47,7 @@
             <a class="nav-link" href="#Skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Portfolio</a>
+            <a class="nav-link" href="#myPortfolio">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Hobbies">Hobbies</a>
@@ -68,14 +68,40 @@
     <div class="profile">
       <img class="ProfilePic" src="Images\CircularHeadshot.png" alt="Profile Picture of Hannah Rafael">
       <h2>Hi there.</h2>
-      <p class="intro"> I am a junior from Southern California studying Aerospace Engineering at the University of Notre Dame. I have a love for aircraft, aviation, and programming. </p>
+      <p class="intro"> I am a junior studying Aerospace Engineering at the University of Notre Dame. I have a love for aircraft, aviation, and programming. </p>
     </div>
     <hr>
+
+    <!-- ABOUT ME SUBSECTION  -->
+  <div id= aboutMe>
+      <div class="aboutMe">
+      <div class="activity-row">
+        <h3> Moreau Student Advisory Council (MSAC)</h3>
+        <p>
+          MSAC is a small cohort of students that work with the ND Office of Student Affairs to create, select, and improve the course content
+          for ND's mandatory <a href=https://corecurriculum.nd.edu/moreau-first-year-experience/>Moreau course</a> for all of approximately 2000 first-year undergraduate students.
+          I have served on this council since my freshman year and am most proud that I have been able to provide a voice that specifically advocates
+          for diversity and inclusion within the Notre Dame community as well as mental health awareness.
+        </p>
+      </div>
+      <div class="activity-row">
+        <h3> Howard Hall Commissioner </h3>
+        <p> I have lived in Howard for the last three years with some of the most wonderful women on campus. During this time, I have loved and cared for this community and have
+        dedicated much of my time to help make Howard a home for everyone. Last year, I was the "Big/Little" commissioner, in which I ---------------
+      ------------------------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------   </p>
+      </div>
+      <div class="activity-row">
+        <h3> Society of Women Engineers (SWE) Dorm Commissioner </h3>
+        <p> I have been a SWE member since I began my time at Notre Dame.   </p>
+      </div>
+      </div>
+  </div>
 
     <!-- SKILLS SUBSECTION  -->
     <div id= Skills>
     <div class="skill">
-      <h2>A Few of My Skills:</h2>
+    <h2>A Few of My Skills:</h2>
       <br />
 
       <!-- Format: Image, Skill title, Italicized list of skills, elaboration paragraph -->
@@ -105,10 +131,45 @@
     </div>
 </div>
 
+
+<!-- MY PROJECT PORTFOLIO -->
+<div id=myPortfolio>
+
+<div class="myPortfolio">
+<h2> A Few of my Favorite Projects:</h2>
+  <div class="project-row"> <!-- Project 1-->
+    <h5><em> Iterative Design Project – ND Picture Frame </em></h5>
+    <a class="project-files" href="CSS\Frame Final Memo.pdf"> Frame Project Final Memo (PDF) </a>
+<br />
+          <img class="projectIMGS" src="Images\PictureFrame.jpg" alt="Picture Frame">
+          <img class="projectIMGS" src="Images\FrameDrawingMain.jpg" alt="Picture Frame">
+          <img class="projectIMGS" src="Images\PictureDisplay.jpg" alt="Picture Frame">
+  <p class="projectdesc">
+    During the Fall of 2018, I worked on a team of three members to create a 3D printed picture frame for the University bookstore.
+    The first iteration of this frame, believe it or not, was rated one of the lowest in my Intro to Engineering Systems class.
+    By considering the feedback my team receive from our peers, instructor, and bookstore employees, we redesigned the frame and
+    completed a second iteration.</p>
+<p class="projectdesc"> I am most proud that our frame ultimately won “Best Overall Design” in our class, and is currently displayed in Stinson-Remick
+  Hall of Engineering at school.</p>
+</div>
+
+  <div class="project-row"> <!-- Project 2-->
+    <h5><em> Face Shield Design </em></h5>
+    <a class="project-files" href="CSS\FaceShieldPresentation.pdf"> CAD Face Shield Presentation (PDF) </a>
+      <br />
+    <img class="projectIMGS" src="Images\FaceShieldRing.png" alt="Face Shield Ring">
+    <img class="projectIMGS" src="Images\FaceShield.png" alt="Face Shield">
+    <img class="projectIMGS" src="Images\FaceShieldCushion.png" alt="Face Shield Head Cushion">
+  </div>
+
+</div>
+</div>
+
+
 <!-- HOBBIES SECTION -->
   <div id="Hobbies">
     <div class="Hobbies">
-      <h2> My Favorite Activites: </h2>
+      <h2> My Favorite Hobbies: </h2>
 
 
 <!-- Hobby: Baking-->
@@ -116,6 +177,7 @@
         <h3> Baking </h3>
         <p> Life's What You Bake It. </p>
         <!-- Carousel of Baking Pictures with Controls-->
+
         <div id="hobbiesCarousel" class="carousel slide" data-ride="false" data-interval="false">
           <div class="bakingCarousel">
             <div class="carousel-item active">
@@ -134,13 +196,14 @@
               <img class="bakingIMG" src="Images\Bread.jpg" alt="Ube Bread">
               <h6> Ube Bread </h6>
             </div>
-            <ol class="carousel-indicators">
-               <li data-target="#bakingCourselIndicator" data-slide-to="0" class="active"></li>
-               <li data-target="#bakingCourselIndicator" data-slide-to="1"></li>
-               <li data-target="#bakingCourselIndicator" data-slide-to="2"></li>
-               <li data-target="#bakingCourselIndicator" data-slide-to="3"></li>
-           </ol>
           </div>
+
+          <ol class="carousel-indicators">
+             <li data-target="#bakingCarouselIndicator" data-slide-to="0" class="active"></li>
+             <li data-target="#bakingCarouselIndicator" data-slide-to="1"></li>
+             <li data-target="#bakingCarouselIndicator" data-slide-to="2"></li>
+             <li data-target="#bakingCarouselIndicator" data-slide-to="3"></li>
+         </ol>
 
           <!-- Controls for the carousel -->
           <a class="carousel-control-prev" href="#hobbiesCarousel" role="button" data-slide="prev">
@@ -156,16 +219,16 @@
 
 <!-- Hobby: Traveling-->
       <div class="hobby-row">
+        <!-- Carousel of Traveling Pictures with Controls-->
         <h3> Traveling </h3>
         <p> All Roads Lead to Home. </p>
-        <!-- Carousel of Traveling Pictures with Controls-->
         <div id="hobbiesCarousel2" class="carousel slide" data-ride="false" data-interval="false">
           <div class="travelingCarousel">
-            <div class="carousel-item active">
+           <div class="carousel-item active">
               <img class="travelingIMG" src="Images\LagunaBeach.jpg" alt="Southern California, Home">
               <h6> Laguna Beach, CA</h6>
             </div>
-            <div class="carousel-item">
+           <div class="carousel-item">
               <img class="travelingIMG" src="Images\Rome.jpg" alt="Rome">
               <h6> Rome, Italy </h6>
             </div>
@@ -199,6 +262,18 @@
             </div>
 
           </div>
+
+          <ol id="travelingCarouselIndicator" class="carousel-indicators">
+             <li data-target="#travelingCarouselIndicator" data-slide-to="0" class="active"></li>
+             <li data-target="#travelingCarouselIndicator" data-slide-to="1"></li>
+             <li data-target="#travelingCarouselIndicator" data-slide-to="2"></li>
+             <li data-target="#travelingCarouselIndicator" data-slide-to="3"></li>
+             <li data-target="#travelingCarouselIndicator" data-slide-to="4"></li>
+             <li data-target="#travelingCarouselIndicator" data-slide-to="5"></li>
+             <li data-target="#travelingCarouselIndicator" data-slide-to="7"></li>
+             <li data-target="#travelingCarouselIndicator" data-slide-to="8"></li>
+         </ol>
+
           <!-- Controls for the carousel -->
           <a class="carousel-control-prev" href="#hobbiesCarousel2" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -217,7 +292,8 @@
     <div class="Contact">
       <h2>Get In Touch</h2>
       <h3> Do you have any questions or comments?</h3>
-      <h3>Feel free to send me a message below or connect with me on LinkedIn.</h3>
+      <h3>Feel free to send me a message below or connect</h3>
+      <h3> with me on LinkedIn.</h3>
       <p> I'll get back to you as soon as possible.</p>
       <a class="btn" href="mailto:hannahkrafael@gmail.com"> Email </a>
       <a class="footer-link" href="https://www.linkedin.com/in/hannah-rafael/"> | LinkedIn</a>
